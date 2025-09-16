@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom';
-import titleImg from '../assets/tal.png';
+import titleImg from '../assets/andon_tal.png';
 import './Main.css';
 
 function Main() {
   const navigate = useNavigate();
 
-  return(
+  return (
     <>
-      <img className='title-img' onClick={() => { navigate('/festivals')}} src={titleImg} alt="대문" />
+      <img className='title-img' onClick={() => { navigate('/festivals') }} src={titleImg} alt="대문" />
     </>
   )
 }

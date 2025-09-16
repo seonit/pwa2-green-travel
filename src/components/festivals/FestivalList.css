@@ -6,11 +6,14 @@
 }
 
 .card {
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px;
-  background-color: #ffffff;
-  display: grid;
-  gap: 10px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   text-align: center;
 }
 
@@ -18,16 +21,12 @@
   padding-top: 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 30px;
 }
 
 .card-title {
-  padding-top: 5px;
-  font-weight: 500;
   font-size: 32px;
 }
 
 .card-period {
   font-size: 24px;
-  padding-bottom: 10px;
 }
