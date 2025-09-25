@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './FestivalList.css';
 import { useEffect } from 'react';
-
 import { festivalIndex } from '../../store/thunks/festivalThunk.js';
 import { dateFormatter } from '../../utils/dateFormatter.js';
 import { setScrollEventFlg } from '../../store/slices/festivalSlice.js';
@@ -49,15 +48,15 @@ function FestivalList() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-festival">
         {
           // festivalList && festivalList.map(item => {
           festivalList.length > 0 && festivalList.map(item => {
             return (
-              <div className="card" onClick={() => {redirectShow(item)}} key={item.contentid + item.createdtime}>
-                <div className="card-img" style={{backgroundImage: `url('${item.firstimage}')`}}></div>
-                <p className="card-title">{item.title}</p>
-                <p className="card-period">{dateFormatter.withHyphenYMD(item.eventstartdate)} ~ {dateFormatter.withHyphenYMD(item.eventenddate)}</p>
+              <div className="card-festival" onClick={() => {redirectShow(item)}} key={item.contentid + item.createdtime}>
+                <div className="card-img-festival" style={{backgroundImage: `url('${item.firstimage}')`}}></div>
+                <p className="card-title-festival">{item.title}</p>
+                <p className="card-period-festival">{dateFormatter.withHyphenYMD(item.eventstartdate)} ~ {dateFormatter.withHyphenYMD(item.eventenddate)}</p>
               </div>
             );
           })

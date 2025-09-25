@@ -1,11 +1,11 @@
-.container-festival {
+.container-stay {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   padding: 20px;
 }
 
-.card-festival {
+.card-stay {
   border-radius: 10px;
   padding: 10px;
   background-color: #ffffff;
@@ -18,16 +18,16 @@
   font-family: 'GeekbleMalrangiche';
 }
 
-.card-img-festival {
+.card-img-stay {
   padding-top: 70%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.card-title-festival {
-  font-size: 28px;
+.card-title-stay {
+  font-size: 26px;
 }
 
-.card-period-festival {
-  font-size: 22px;
+.card-addr-stay {
+  font-size: 20px;
 }

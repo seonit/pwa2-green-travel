@@ -1,6 +1,27 @@
-.title-img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px;
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 350px; 
+  height: 350px;
+  margin: 40px auto;
+}
+
+.title-img-festivals,
+.title-img-stay {
+  width: 230px;
+  height: 230px;
+  cursor: pointer;
+}
+
+.title-img-festivals {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  z-index: 2;
+}
+
+.title-img-stay {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  z-index: 1;
 }

@@ -33,7 +33,7 @@ export default defineConfig({
             src: '/icons/icon-192.png', // 로컬 경로 설정
             sizes: '192X192', // 아이콘 크기
             type: 'image/png', // 해당 파일의 타입
-            purpose: 'any'
+            purpose: 'any',
             // Windows(Edge, Chrome on Desktop 등)의 경우 `any` 중 가장 첫번째 아이콘을 사용
             // Android(Chrome 등)의 경우, `maskable`을 우선 사용
             // IOS의 경우, manifest를 무시하고, index.html의 `<link rel="applle-touch-icon">`만 사용

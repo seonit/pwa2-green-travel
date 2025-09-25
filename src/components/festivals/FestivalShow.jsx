@@ -25,12 +25,12 @@ function FestivalShow() {
   return (
     <>
     { festivalInfo.title && 
-    <div className="show-container">
-      <button type="button" onClick={redirectBack}>되돌아가기</button>
-      <p className="show-title">{festivalInfo.title}</p>
-      <p className="show-period">{dateFormatter.withHyphenYMD(festivalInfo.eventstartdate)} ~ {dateFormatter.withHyphenYMD(festivalInfo.eventenddate)}</p>
-      <img className="show-img" src={festivalInfo.firstimage} alt={`${festivalInfo.title}사진`} />
-      <p className="show-addr">{`${festivalInfo.addr1}, ${festivalInfo.addr2}`}</p>
+    <div className="show-container-festival">
+      <p className="show-title-festival">{festivalInfo.title}</p>
+      <img className="show-img-festival" src={festivalInfo.firstimage} alt={`${festivalInfo.title}사진`} />
+      <p className="show-detail-festival">{dateFormatter.withHyphenYMD(festivalInfo.eventstartdate)} ~ {dateFormatter.withHyphenYMD(festivalInfo.eventenddate)}</p>
+      <p className="show-detail-festival">{`${festivalInfo.addr1}, ${festivalInfo.addr2}`}</p>
+      <button className="back-btn-festival" type="button" onClick={redirectBack}>되돌아가기</button>
     </div>
     }
     </>
