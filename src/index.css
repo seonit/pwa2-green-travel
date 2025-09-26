@@ -5,6 +5,13 @@
     font-display: swap;
 }
 
+/* CSS에서의 변수 선언 */
+:root {
+  /* 변수명은 무조건 `--변수명`으로 시작 */
+  --personal-color-1: #fff6ef;
+  --personal-color-2: #567067;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +19,8 @@
 }
 
 body {
-  background-color: #fff6ef;
+  /* 변수 사용: var(변수명) 호출 */
+  background-color: var(--personal-color-1);
 }
 #root {
   max-width: 1280px;
